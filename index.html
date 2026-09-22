@@ -1,477 +1,1660 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ibrahim Kamil Ibrahim | Software Developer &amp; Co-Founder at ONECO</title>
+<meta name="description" content="Ibrahim Kamil Ibrahim is a software developer and Co-Founder at ONECO, specializing in full-stack, web, mobile and desktop application development." />
+<meta name="keywords" content="Ibrahim Kamil Ibrahim, Ibrahim Kamil, software developer Ethiopia, ONECO, full-stack developer" />
+<meta name="author" content="Ibrahim Kamil Ibrahim" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ibrahim Kamil Ibrahim | Software Developer & Co-Founder at ONECO" />
+<meta property="og:description" content="Software developer and Co-Founder at ONECO, building full-stack, web, mobile and desktop applications." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
 
-  <!-- ============================================================
-       PRIMARY SEO — GitHub Pages URL set; replace with your real domain
-       once you connect one, e.g. https://ibrahimkamil.dev
-  ============================================================ -->
-  <title>Ibrahim Kamil Ibrahim | Software Developer &amp; Co-Founder at ONECO</title>
-  <meta name="description" content="Ibrahim Kamil Ibrahim is a software developer and Co-Founder at ONECO, specializing in full-stack, web, mobile and desktop application development." />
-  <meta name="keywords" content="Ibrahim Kamil Ibrahim, Ibrahim Kamil, Ibrahim Kamil software developer, Ibrahim Kamil Ethiopia, Ibrahim Kamil developer, Ibrahim Kamil ONECO" />
-  <meta name="author" content="Ibrahim Kamil Ibrahim" />
-  <meta name="robots" content="index, follow" />
+<style>
+/* ==========================================================================
+   IBRAHIM KAMIL IBRAHIM — PORTFOLIO v3.0 "AURORA EDITION"
+   ========================================================================== */
 
-  <!-- REPLACE: canonical URL once your domain/GitHub Pages URL is live -->
-  <link rel="canonical" href="https://ibrahim-kamil-ibrahim.github.io/" />
+/* ---------- DESIGN TOKENS ---------- */
+:root{
+  --bg:#050a09;
+  --bg-alt:#08110f;
+  --panel:#0b1614;
+  --panel-2:#0f1e1a;
+  --panel-3:#132723;
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ibrahim Kamil Ibrahim | Software Developer & Co-Founder at ONECO" />
-  <meta property="og:description" content="Software developer and Co-Founder at ONECO, building full-stack, web, mobile and desktop applications." />
-  <meta property="og:url" content="https://ibrahim-kamil-ibrahim.github.io/" />
-  <!-- REPLACE: absolute URL to a real social preview image (1200x630 recommended) -->
-  <meta property="og:image" content="https://ibrahim-kamil-ibrahim.github.io/assets/og-image.jpg" />
-  <meta property="og:site_name" content="Ibrahim Kamil Ibrahim" />
-  <meta property="og:locale" content="en_US" />
+  --border:rgba(58,199,149,.12);
+  --border-strong:rgba(58,199,149,.28);
+  --border-glow:rgba(47,227,166,.55);
 
-  <!-- Twitter / X Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ibrahim Kamil Ibrahim | Software Developer & Co-Founder at ONECO" />
-  <meta name="twitter:description" content="Software developer and Co-Founder at ONECO, building full-stack, web, mobile and desktop applications." />
-  <meta name="twitter:image" content="https://ibrahim-kamil-ibrahim.github.io/assets/og-image.jpg" />
-  <meta name="twitter:site" content="@ibrahimkamil877" />
+  --emerald:#2fe3a6;
+  --emerald-bright:#7dffce;
+  --emerald-dim:#15996e;
+  --emerald-soft:rgba(47,227,166,.10);
+  --emerald-glow:rgba(47,227,166,.28);
+  --emerald-glow-2:rgba(47,227,166,.06);
 
-  <!-- REPLACE: favicon files in /assets/ once you have real ones -->
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  --gold:#f5c56b;
+  --gold-soft:rgba(245,197,107,.10);
 
-  <!-- Fonts: Space Grotesk (display) + IBM Plex Sans (body) + IBM Plex Mono (code accents) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  --text:#eaf4f0;
+  --text-muted:#9cb2ab;
+  --text-faint:#5b7a72;
 
-  <link rel="stylesheet" href="style.css" />
+  --font-display:"Syne","Space Grotesk",sans-serif;
+  --font-heading:"Space Grotesk",sans-serif;
+  --font-body:"IBM Plex Sans",sans-serif;
+  --font-mono:"IBM Plex Mono",monospace;
 
-  <!-- ============================================================
-       STRUCTURED DATA (Schema.org JSON-LD)
-       Only real, provided information is included below.
-       Replace image/url placeholders once available.
-  ============================================================ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ibrahim Kamil Ibrahim",
-    "alternateName": "Ibrahim Kamil",
-    "jobTitle": "Software Developer",
-    "description": "Software developer and Co-Founder at ONECO, specializing in full-stack, web, mobile and desktop application development.",
-    "image": "https://ibrahim-kamil-ibrahim.github.io/assets/profile.jpg",
-    "url": "https://ibrahim-kamil-ibrahim.github.io/",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "ONECO"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dire Dawa",
-      "addressCountry": "Ethiopia"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/ibrahimkamilibrahim/",
-      "https://www.instagram.com/ibrahim_kamil_ibrahim_/",
-      "https://github.com/ibrahim-kamil-ibrahim",
-      "https://web.facebook.com/ibrahimkamilibrahim1",
-      "https://x.com/ibrahimkamil877"
-    ]
+  --radius-xs:4px;
+  --radius-sm:8px;
+  --radius-md:14px;
+  --radius-lg:22px;
+  --radius-xl:32px;
+  --radius-full:999px;
+
+  --shadow-sm:0 2px 8px -2px rgba(0,0,0,.5);
+  --shadow-card:0 8px 32px -8px rgba(0,0,0,.6);
+  --shadow-glow:0 0 40px -8px var(--emerald-glow);
+  --shadow-lift:0 24px 70px -16px rgba(0,0,0,.8);
+
+  --container:1200px;
+  --nav-h:76px;
+
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  --smooth:cubic-bezier(.65,0,.35,1);
+}
+
+/* ---------- LIGHT THEME ---------- */
+[data-theme="light"]{
+  --bg:#f4f8f6; --bg-alt:#eaf1ee; --panel:#ffffff; --panel-2:#f6faf8; --panel-3:#eef5f2;
+  --border:rgba(20,100,70,.14); --border-strong:rgba(20,100,70,.30);
+  --emerald:#0d9a6c; --emerald-bright:#16b880; --emerald-dim:#0a7a55;
+  --emerald-soft:rgba(13,154,108,.09); --emerald-glow:rgba(13,154,108,.22);
+  --text:#08150f; --text-muted:#4a5b55; --text-faint:#7c8d86;
+  --shadow-card:0 8px 32px -8px rgba(18,46,38,.15);
+  --shadow-lift:0 24px 70px -16px rgba(18,46,38,.25);
+}
+
+/* ---------- RESET ---------- */
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,figure,blockquote{margin:0;}
+ul,ol{padding:0;list-style:none;}
+img{max-width:100%;display:block;height:auto;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;}
+input,textarea{font:inherit;color:inherit;}
+
+/* ---------- CUSTOM SCROLLBAR ---------- */
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--emerald-dim),var(--emerald));border-radius:var(--radius-full);border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--emerald-bright);}
+::selection{background:var(--emerald-soft);color:var(--emerald-bright);}
+
+/* ---------- BASE ---------- */
+body{
+  background:var(--bg);color:var(--text);
+  font-family:var(--font-body);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  transition:background .5s var(--ease),color .5s var(--ease);
+  overflow-x:hidden;position:relative;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.035;mix-blend-mode:overlay;
+}
+[data-theme="light"] body::before{opacity:.06;}
+
+h1,h2,h3,h4{font-family:var(--font-heading);color:var(--text);line-height:1.12;letter-spacing:-0.025em;font-weight:600;}
+h2{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-0.035em;max-width:24ch;}
+h3{font-size:1.25rem;font-weight:600;}
+p{color:var(--text-muted);max-width:65ch;}
+
+/* ---------- KEYFRAMES ---------- */
+@keyframes aurora{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(60px,-40px) scale(1.15);}66%{transform:translate(-40px,30px) scale(.95);}}
+@keyframes float{0%,100%{transform:translateY(0) translateX(0);}33%{transform:translateY(-12px) translateX(6px);}66%{transform:translateY(-6px) translateX(-6px);}}
+@keyframes float-slow{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 24px -6px var(--emerald-glow);}50%{box-shadow:0 0 48px -6px var(--emerald-glow),0 0 80px -12px var(--emerald-soft);}}
+@keyframes gradient-shift{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+@keyframes border-flow{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@keyframes blink{50%{opacity:0;}}
+@keyframes fade-up{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+@keyframes scale-in{from{opacity:0;transform:scale(.9);}to{opacity:1;transform:scale(1);}}
+@keyframes spin-slow{to{transform:rotate(360deg);}}
+@keyframes shine{0%{background-position:-200% center;}100%{background-position:200% center;}}
+@keyframes scroll-dot{0%{transform:translateY(0);opacity:1;}80%{transform:translateY(20px);opacity:0;}100%{transform:translateY(0);opacity:0;}}
+
+/* ---------- SCROLL ANIMATION BASE ---------- */
+[data-animate]{opacity:1;transform:none;transition:opacity .9s var(--ease-out),transform .9s var(--ease-out);}
+html.js-ready [data-animate="fade-up"]{opacity:0;transform:translateY(32px);}
+html.js-ready [data-animate="fade-left"]{opacity:0;transform:translateX(-40px);}
+html.js-ready [data-animate="fade-right"]{opacity:0;transform:translateX(40px);}
+html.js-ready [data-animate="scale-in"]{opacity:0;transform:scale(.94);}
+html.js-ready [data-animate].visible{opacity:1;transform:translate(0,0) scale(1);}
+
+/* ---------- CURSOR GLOW ---------- */
+.cursor-glow{
+  position:fixed;top:0;left:0;width:500px;height:500px;pointer-events:none;
+  border-radius:50%;z-index:0;opacity:0;transition:opacity .4s;
+  background:radial-gradient(circle,var(--emerald-glow) 0%,transparent 65%);
+  filter:blur(40px);mix-blend-mode:screen;
+  transform:translate(-50%,-50%);
+  will-change:transform;
+}
+[data-theme="light"] .cursor-glow{mix-blend-mode:multiply;opacity:.35;}
+@media (hover:hover){body:hover .cursor-glow{opacity:.6;}}
+
+/* ---------- LAYOUT ---------- */
+.section-inner{width:min(100% - 2.5rem,var(--container));margin-inline:auto;position:relative;z-index:2;}
+.section{padding:clamp(5rem,10vw,8rem) 0;position:relative;}
+.section-alt{background:var(--bg-alt);}
+.section-head{display:flex;flex-direction:column;gap:.75rem;margin-bottom:3rem;max-width:720px;}
+.section-tag{
+  display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;font-weight:600;
+  color:var(--emerald);text-transform:uppercase;letter-spacing:.18em;width:fit-content;
+  font-family:var(--font-mono);
+}
+.section-tag::before{content:"";width:28px;height:1px;background:var(--emerald);}
+.section-lead{color:var(--text-muted);font-size:1.05rem;max-width:56ch;}
+
+/* ---------- SKIP LINK ---------- */
+.skip-link{position:absolute;left:-999px;top:0;background:var(--emerald);color:#06110d;padding:.7rem 1.2rem;border-radius:0 0 var(--radius-sm) 0;z-index:9999;font-weight:600;font-size:.875rem;}
+.skip-link:focus{left:.5rem;top:0;}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);transition:all .4s var(--ease);}
+.site-header.scrolled{
+  background:color-mix(in srgb,var(--bg) 78%,transparent);
+  backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{max-width:var(--container);margin-inline:auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;}
+.nav-logo{font-family:var(--font-display);font-size:1.1rem;font-weight:700;letter-spacing:-.03em;color:var(--text);transition:color .25s;display:flex;align-items:center;gap:.6rem;}
+.nav-logo::before{
+  content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald);
+  box-shadow:0 0 12px var(--emerald);animation:pulse-glow 3s infinite;
+}
+.nav-logo:hover{color:var(--emerald);}
+.nav-menu ul{display:flex;gap:.15rem;}
+.nav-menu a{
+  position:relative;padding:.5rem .95rem;font-size:.88rem;font-weight:500;
+  color:var(--text-muted);border-radius:var(--radius-sm);transition:all .25s var(--ease);
+}
+.nav-menu a:hover{color:var(--text);background:var(--emerald-soft);}
+.nav-menu a.active{color:var(--emerald);}
+.nav-menu a.active::after{
+  content:"";position:absolute;bottom:6px;left:50%;transform:translateX(-50%);
+  width:16px;height:2px;background:var(--emerald);border-radius:var(--radius-full);
+  box-shadow:0 0 8px var(--emerald-glow);
+}
+.nav-actions{display:flex;align-items:center;gap:.5rem;}
+.nav-progress{
+  position:fixed;top:var(--nav-h);left:0;height:2px;
+  background:linear-gradient(90deg,var(--emerald-dim),var(--emerald-bright),var(--emerald));
+  background-size:200% 100%;animation:border-flow 4s linear infinite;
+  z-index:99;transition:width .1s linear;width:0%;
+  box-shadow:0 0 12px var(--emerald-glow);
+}
+.icon-btn{
+  position:relative;width:42px;height:42px;display:flex;align-items:center;justify-content:center;
+  border-radius:var(--radius-full);background:var(--panel);border:1px solid var(--border);
+  transition:all .3s var(--spring);
+}
+.icon-btn:hover{border-color:var(--border-strong);background:var(--panel-2);transform:scale(1.06) rotate(-8deg);}
+.icon-btn:active{transform:scale(.94);}
+.icon-btn .icon-sun,.icon-btn .icon-moon{position:absolute;transition:all .4s var(--ease);}
+.icon-btn .icon-sun{opacity:0;transform:rotate(90deg) scale(.5);}
+.icon-btn .icon-moon{opacity:1;transform:rotate(0) scale(1);}
+[data-theme="light"] .icon-btn .icon-sun{opacity:1;transform:rotate(0) scale(1);}
+[data-theme="light"] .icon-btn .icon-moon{opacity:0;transform:rotate(-90deg) scale(.5);}
+.hamburger{display:none;width:42px;height:42px;position:relative;border-radius:var(--radius-sm);}
+.hamburger span{position:absolute;left:11px;right:11px;height:2px;background:var(--text);border-radius:var(--radius-full);transition:all .35s var(--ease);}
+.hamburger span:nth-child(1){top:14px;}
+.hamburger span:nth-child(2){top:20px;}
+.hamburger span:nth-child(3){top:26px;}
+.hamburger.open span:nth-child(1){top:20px;transform:rotate(45deg);background:var(--emerald);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){top:20px;transform:rotate(-45deg);background:var(--emerald);}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero{
+  min-height:100vh;display:flex;align-items:center;position:relative;
+  overflow:hidden;padding-top:var(--nav-h);
+}
+/* Aurora background */
+.hero-aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;}
+.hero-aurora span{
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;
+  will-change:transform;
+}
+.hero-aurora span:nth-child(1){width:520px;height:520px;background:radial-gradient(circle,#2fe3a6,transparent 70%);top:-120px;left:-100px;animation:aurora 18s ease-in-out infinite;}
+.hero-aurora span:nth-child(2){width:420px;height:420px;background:radial-gradient(circle,#15996e,transparent 70%);bottom:-100px;right:-80px;animation:aurora 22s ease-in-out infinite reverse;}
+.hero-aurora span:nth-child(3){width:340px;height:340px;background:radial-gradient(circle,#7dffce,transparent 70%);top:40%;left:45%;opacity:.25;animation:aurora 26s ease-in-out infinite;}
+.hero-aurora span:nth-child(4){width:280px;height:280px;background:radial-gradient(circle,#f5c56b,transparent 70%);top:10%;right:15%;opacity:.12;animation:aurora 20s ease-in-out infinite reverse;}
+
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+  background-image:
+    linear-gradient(var(--border) 1px,transparent 1px),
+    linear-gradient(90deg,var(--border) 1px,transparent 1px);
+  background-size:64px 64px;opacity:.5;
+  mask-image:radial-gradient(ellipse 75% 65% at 50% 50%,black 25%,transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 50%,black 25%,transparent 75%);
+}
+
+.hero-inner{
+  position:relative;z-index:2;width:100%;max-width:var(--container);margin-inline:auto;
+  padding:0 1.5rem;display:grid;grid-template-columns:1.15fr 1fr;
+  gap:clamp(2rem,5vw,5rem);align-items:center;
+}
+.hero-copy{display:flex;flex-direction:column;gap:1.35rem;}
+.hero-kicker{
+  font-size:.75rem;font-weight:600;color:var(--emerald);text-transform:uppercase;
+  letter-spacing:.2em;display:flex;align-items:center;gap:.7rem;
+  font-family:var(--font-mono);width:fit-content;
+  padding:.4rem .9rem;border-radius:var(--radius-full);
+  background:var(--emerald-soft);border:1px solid var(--border);
+}
+.hero-kicker::before{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--emerald);
+  box-shadow:0 0 8px var(--emerald);animation:pulse-glow 2s infinite;
+}
+.hero-name{
+  font-family:var(--font-display);
+  font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;line-height:1;letter-spacing:-.045em;
+  background:linear-gradient(135deg,var(--text) 20%,var(--emerald-bright) 55%,var(--text) 90%);
+  background-size:220% 220%;animation:gradient-shift 8s ease-in-out infinite;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-role{
+  font-family:var(--font-mono);font-size:clamp(1rem,1.6vw,1.15rem);
+  color:var(--text-muted);font-weight:400;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;
+  min-height:1.6em;
+}
+.hero-role .prompt{color:var(--emerald);}
+.hero-role .typed{color:var(--emerald-bright);font-weight:500;}
+.hero-role .caret{
+  display:inline-block;width:2px;height:1.1em;background:var(--emerald);
+  animation:blink 1s step-end infinite;vertical-align:middle;margin-left:2px;
+}
+.hero-desc{font-size:1.05rem;color:var(--text-muted);max-width:48ch;line-height:1.75;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;}
+.hero-badges li{
+  padding:.4rem .9rem;font-size:.78rem;font-weight:500;color:var(--text-muted);
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-full);
+  transition:all .3s var(--spring);font-family:var(--font-mono);
+}
+.hero-badges li:hover{border-color:var(--border-strong);color:var(--emerald);transform:translateY(-2px);background:var(--emerald-soft);}
+
+/* Hero visual */
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:520px;}
+.portrait-wrap{position:relative;width:min(340px,90%);perspective:1200px;}
+.portrait-frame{
+  position:relative;width:100%;aspect-ratio:3/3.6;border-radius:var(--radius-xl);
+  overflow:hidden;background:var(--panel);
+  border:1px solid var(--border-strong);
+  box-shadow:var(--shadow-card),var(--shadow-glow);
+  transition:transform .3s var(--ease);
+  transform-style:preserve-3d;
+  z-index:3;
+}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);}
+.portrait-frame:hover img{transform:scale(1.04);}
+.portrait-frame::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(135deg,transparent 40%,rgba(47,227,166,.08) 100%);
+}
+.portrait-ring{
+  position:absolute;inset:-14px;border-radius:calc(var(--radius-xl) + 14px);
+  border:1px dashed var(--border-strong);opacity:.5;
+  animation:spin-slow 40s linear infinite;pointer-events:none;z-index:1;
+}
+.portrait-ring::before,.portrait-ring::after{
+  content:"";position:absolute;width:8px;height:8px;border-radius:50%;
+  background:var(--emerald);box-shadow:0 0 12px var(--emerald);
+}
+.portrait-ring::before{top:0;left:50%;transform:translate(-50%,-50%);}
+.portrait-ring::after{bottom:0;left:50%;transform:translate(-50%,50%);}
+
+/* Floating stat chips */
+.float-chip{
+  position:absolute;display:flex;align-items:center;gap:.5rem;
+  padding:.55rem .85rem;background:var(--panel);border:1px solid var(--border-strong);
+  border-radius:var(--radius-full);font-family:var(--font-mono);font-size:.75rem;
+  font-weight:500;color:var(--text);box-shadow:var(--shadow-card);z-index:4;
+  backdrop-filter:blur(10px);white-space:nowrap;
+}
+.float-chip svg{width:14px;height:14px;color:var(--emerald);}
+.chip-1{top:12%;left:-8%;animation:float 6s ease-in-out infinite;}
+.chip-2{bottom:22%;right:-10%;animation:float 7s ease-in-out infinite .8s;}
+.chip-3{bottom:8%;left:-4%;animation:float 8s ease-in-out infinite 1.6s;}
+
+/* Code window */
+.code-window{
+  position:absolute;right:-6%;bottom:-4%;width:min(340px,78%);
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-md);
+  box-shadow:var(--shadow-lift);z-index:5;animation:float 9s ease-in-out infinite;
+  overflow:hidden;
+}
+.code-window-bar{display:flex;gap:6px;padding:11px 14px;background:var(--panel-2);border-bottom:1px solid var(--border);}
+.code-window-bar span{width:11px;height:11px;border-radius:50%;}
+.code-window-bar span:nth-child(1){background:#ef5a5a;}
+.code-window-bar span:nth-child(2){background:#f5b35a;}
+.code-window-bar span:nth-child(3){background:#5af07a;}
+.code-window-title{
+  margin-left:auto;font-family:var(--font-mono);font-size:.7rem;color:var(--text-faint);
+  letter-spacing:.05em;
+}
+.code-window-body{
+  padding:1.1rem 1.3rem;margin:0;font-family:var(--font-mono);font-size:.82rem;
+  line-height:1.75;color:var(--text-muted);overflow:hidden;
+}
+.tok-kw{color:var(--emerald);font-weight:600;}
+.tok-var{color:var(--text);}
+.tok-key{color:var(--emerald-bright);font-weight:500;}
+.tok-str{color:#c8e6d4;}
+.tok-num{color:var(--gold);}
+
+/* Scroll indicator */
+.scroll-cue{
+  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;z-index:3;
+  font-family:var(--font-mono);font-size:.68rem;color:var(--text-faint);
+  letter-spacing:.2em;text-transform:uppercase;
+}
+.scroll-cue .mouse{
+  width:22px;height:36px;border:1.5px solid var(--border-strong);border-radius:var(--radius-full);
+  position:relative;display:flex;justify-content:center;padding-top:6px;
+}
+.scroll-cue .mouse::before{
+  content:"";width:3px;height:6px;border-radius:2px;background:var(--emerald);
+  animation:scroll-dot 2s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.btn{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.7rem;font-size:.92rem;font-weight:600;font-family:var(--font-heading);
+  letter-spacing:-.01em;border-radius:var(--radius-full);border:1px solid transparent;
+  cursor:pointer;transition:transform .3s var(--spring),box-shadow .3s var(--ease),
+    background .3s,border-color .3s,color .3s;overflow:hidden;isolation:isolate;
+}
+.btn > *{position:relative;z-index:2;}
+.btn::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);
+  background-size:200% 100%;transform:translateX(-100%);transition:transform .7s var(--ease);
+}
+.btn:hover::before{transform:translateX(100%);}
+.btn-primary{background:linear-gradient(135deg,var(--emerald),var(--emerald-dim));color:#04130e;box-shadow:0 6px 20px -6px var(--emerald-glow);}
+.btn-primary:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 36px -6px var(--emerald-glow),0 0 60px -12px var(--emerald-soft);}
+.btn-primary:active{transform:translateY(-1px) scale(.99);}
+.btn-outline{background:transparent;color:var(--text);border-color:var(--border-strong);}
+.btn-outline:hover{border-color:var(--emerald);color:var(--emerald);background:var(--emerald-soft);transform:translateY(-2px);}
+.btn-ghost{background:transparent;color:var(--text-muted);border-color:transparent;}
+.btn-ghost:hover{color:var(--emerald);background:var(--emerald-soft);}
+.btn svg{width:16px;height:16px;}
+
+/* ==========================================================================
+   STATS STRIP
+   ========================================================================== */
+.stats-strip{
+  position:relative;z-index:2;
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  background:var(--bg-alt);
+}
+.stats-inner{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  max-width:var(--container);margin-inline:auto;padding:2.5rem 1.5rem;gap:1rem;
+}
+.stat{display:flex;flex-direction:column;gap:.35rem;padding:0 1rem;border-left:1px solid var(--border);}
+.stat:first-child{border-left:none;}
+.stat-num{
+  font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);
+  font-weight:800;color:var(--text);letter-spacing:-.04em;line-height:1;
+}
+.stat-num .plus{color:var(--emerald);}
+.stat-label{font-family:var(--font-mono);font-size:.72rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:.15em;}
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start;}
+.about-copy h2{margin-bottom:1.5rem;}
+.about-copy p{margin-bottom:1.1rem;font-size:1.02rem;}
+.about-copy p:last-child{margin-bottom:0;}
+.about-copy strong{color:var(--emerald);font-weight:600;}
+.about-card{
+  position:sticky;top:calc(var(--nav-h) + 2rem);
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:1.75rem;overflow:hidden;
+}
+.about-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--emerald),transparent);
+}
+.about-card-title{
+  font-family:var(--font-mono);font-size:.72rem;color:var(--emerald);
+  text-transform:uppercase;letter-spacing:.2em;margin-bottom:1.2rem;
+  display:flex;align-items:center;gap:.5rem;
+}
+.about-card-title::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald);}
+.about-list{display:flex;flex-direction:column;gap:1rem;}
+.about-list li{display:flex;gap:.85rem;align-items:flex-start;font-size:.92rem;color:var(--text-muted);}
+.about-list li svg{width:18px;height:18px;flex-shrink:0;color:var(--emerald);margin-top:3px;}
+
+/* ==========================================================================
+   MARQUEE
+   ========================================================================== */
+.marquee{
+  position:relative;overflow:hidden;padding:1.5rem 0;
+  background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  mask-image:linear-gradient(90deg,transparent,black 15%,black 85%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,black 15%,black 85%,transparent);
+}
+.marquee-track{display:flex;gap:3rem;width:max-content;animation:marquee 32s linear infinite;}
+.marquee:hover .marquee-track{animation-play-state:paused;}
+.marquee-item{
+  display:flex;align-items:center;gap:.6rem;
+  font-family:var(--font-mono);font-size:.9rem;color:var(--text-muted);
+  font-weight:500;white-space:nowrap;transition:color .3s;
+}
+.marquee-item::before{content:"◆";color:var(--emerald);font-size:.6rem;}
+.marquee-item:hover{color:var(--emerald);}
+
+/* ==========================================================================
+   SKILLS
+   ========================================================================== */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:.5rem;}
+.skill-card{
+  position:relative;display:flex;align-items:center;gap:.9rem;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-md);
+  font-size:.9rem;font-weight:500;color:var(--text-muted);cursor:default;
+  transition:all .35s var(--spring);overflow:hidden;
+}
+.skill-card::before{
+  content:"";position:absolute;inset:0;opacity:0;transition:opacity .35s;
+  background:linear-gradient(135deg,var(--emerald-soft) 0%,transparent 60%);
+}
+.skill-card::after{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:var(--emerald);transform:scaleY(0);transform-origin:top;
+  transition:transform .35s var(--ease);
+}
+.skill-card:hover{
+  border-color:var(--border-strong);background:var(--panel-2);color:var(--text);
+  transform:translateY(-4px);box-shadow:var(--shadow-card),0 0 24px -10px var(--emerald-glow);
+}
+.skill-card:hover::before{opacity:1;}
+.skill-card:hover::after{transform:scaleY(1);}
+.skill-card svg{width:20px;height:20px;flex-shrink:0;color:var(--emerald-dim);transition:all .35s var(--spring);position:relative;z-index:1;}
+.skill-card:hover svg{color:var(--emerald);transform:scale(1.15) rotate(-6deg);}
+.skill-card span{position:relative;z-index:1;}
+
+/* ==========================================================================
+   PROJECTS
+   ========================================================================== */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.75rem;margin-top:.5rem;}
+.project-card{
+  position:relative;background:var(--panel);border:1px solid var(--border);
+  border-radius:var(--radius-lg);overflow:hidden;
+  transition:all .5s var(--ease-out);transform-style:preserve-3d;
+}
+.project-card::before{
+  content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;z-index:0;
+  background:linear-gradient(135deg,var(--emerald),transparent 40%,transparent 60%,var(--emerald-bright));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.project-card:hover::before{opacity:1;}
+.project-card:hover{
+  border-color:transparent;transform:translateY(-8px);
+  box-shadow:var(--shadow-lift),0 0 40px -12px var(--emerald-glow);
+}
+.project-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg-alt);}
+.project-thumb-placeholder{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:var(--font-display);font-weight:800;
+  font-size:1.5rem;letter-spacing:-.03em;text-shadow:0 4px 12px rgba(0,0,0,.4);
+  transition:transform .7s var(--ease-out);position:relative;
+}
+.project-thumb-placeholder::after{
+  content:"";position:absolute;inset:0;
+  background:
+    repeating-linear-gradient(45deg,transparent 0 12px,rgba(255,255,255,.04) 12px 13px);
+}
+.project-card:hover .project-thumb-placeholder{transform:scale(1.08);}
+.project-thumb-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(5,10,9,.85) 0%,transparent 55%);
+  opacity:0;transition:opacity .4s;display:flex;align-items:flex-end;padding:1rem;
+}
+.project-card:hover .project-thumb-overlay{opacity:1;}
+.project-thumb-overlay .tag{
+  font-family:var(--font-mono);font-size:.7rem;color:var(--emerald);
+  padding:.25rem .6rem;border:1px solid var(--border-strong);
+  border-radius:var(--radius-full);background:rgba(0,0,0,.4);
+  backdrop-filter:blur(6px);
+}
+.project-body{padding:1.4rem 1.5rem 1.5rem;position:relative;z-index:1;}
+.project-num{
+  font-family:var(--font-mono);font-size:.7rem;color:var(--emerald);
+  letter-spacing:.2em;margin-bottom:.5rem;display:block;
+}
+.project-body h3{margin-bottom:.5rem;font-size:1.2rem;transition:color .3s;}
+.project-card:hover .project-body h3{color:var(--emerald);}
+.project-body > p{font-size:.9rem;margin-bottom:1.1rem;line-height:1.65;}
+.tech-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem;}
+.tech-tags li{
+  padding:.2rem .65rem;font-size:.72rem;font-weight:500;
+  color:var(--text-faint);background:var(--emerald-soft);
+  border-radius:var(--radius-full);border:1px solid var(--border);
+  transition:all .3s;font-family:var(--font-mono);
+}
+.project-card:hover .tech-tags li{border-color:var(--border-strong);color:var(--emerald-dim);}
+.project-link{
+  display:inline-flex;align-items:center;gap:.45rem;font-size:.88rem;
+  font-weight:600;color:var(--emerald);transition:gap .3s var(--ease);
+  font-family:var(--font-heading);
+}
+.project-link::after{content:"→";transition:transform .3s var(--spring);}
+.project-card:hover .project-link{gap:.7rem;}
+.project-card:hover .project-link::after{transform:translateX(4px);}
+
+/* ==========================================================================
+   ONECO
+   ========================================================================== */
+.oneco{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--bg-alt) 0%,var(--panel) 100%);
+}
+.oneco::before{
+  content:"";position:absolute;top:-50%;right:-10%;width:600px;height:600px;
+  border-radius:50%;background:radial-gradient(circle,var(--emerald-glow) 0%,transparent 65%);
+  filter:blur(60px);opacity:.4;pointer-events:none;
+}
+.oneco-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:2.5rem;flex-wrap:wrap;position:relative;z-index:2;
+}
+.oneco-content{max-width:560px;}
+.oneco-content h2{margin-bottom:1rem;}
+.oneco-content p{margin-bottom:1.75rem;font-size:1.02rem;}
+.oneco-badge{
+  display:inline-flex;align-items:center;gap:.6rem;padding:.5rem 1rem;
+  background:var(--emerald-soft);border:1px solid var(--border-strong);
+  border-radius:var(--radius-full);font-family:var(--font-mono);
+  font-size:.72rem;color:var(--emerald);letter-spacing:.15em;
+  text-transform:uppercase;margin-bottom:1.25rem;
+}
+.oneco-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald);animation:pulse-glow 2s infinite;}
+
+/* ==========================================================================
+   TIMELINE
+   ========================================================================== */
+.timeline{position:relative;margin-top:.5rem;max-width:720px;}
+.timeline::before{
+  content:"";position:absolute;left:11px;top:14px;bottom:14px;width:2px;
+  background:linear-gradient(to bottom,var(--emerald),var(--emerald-dim),transparent);
+  border-radius:var(--radius-full);
+}
+.timeline-item{position:relative;padding-left:3.25rem;padding-bottom:2.25rem;}
+.timeline-item:last-child{padding-bottom:0;}
+.timeline-marker{
+  position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;
+  background:var(--panel);border:2px solid var(--emerald);display:flex;
+  align-items:center;justify-content:center;z-index:2;
+  box-shadow:0 0 16px -2px var(--emerald-glow);
+  transition:all .35s var(--spring);
+}
+.timeline-marker::after{
+  content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald);
+  box-shadow:0 0 8px var(--emerald);
+}
+.timeline-item:hover .timeline-marker{transform:scale(1.2);border-color:var(--emerald-bright);}
+.timeline-card{
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-md);
+  padding:1.25rem 1.4rem;transition:all .35s var(--ease);
+}
+.timeline-item:hover .timeline-card{border-color:var(--border-strong);background:var(--panel-2);}
+.timeline-date{
+  font-family:var(--font-mono);font-size:.7rem;color:var(--emerald);
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem;
+}
+.timeline-card h3{font-size:1.1rem;margin-bottom:.4rem;}
+.timeline-card p{font-size:.9rem;line-height:1.65;}
+
+/* ==========================================================================
+   SOCIAL
+   ========================================================================== */
+.social-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-top:.5rem;}
+.social-card{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.8rem;padding:1.75rem 1rem;background:var(--panel);border:1px solid var(--border);
+  border-radius:var(--radius-md);font-size:.85rem;font-weight:500;color:var(--text-muted);
+  transition:all .4s var(--spring);overflow:hidden;
+}
+.social-card::before{
+  content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s;
+  background:radial-gradient(circle at 50% 0%,var(--emerald-soft) 0%,transparent 70%);
+}
+.social-card svg{width:26px;height:26px;color:var(--emerald-dim);transition:all .5s var(--spring);position:relative;z-index:1;}
+.social-card span{position:relative;z-index:1;}
+.social-card:hover{
+  border-color:var(--border-strong);background:var(--panel-2);color:var(--text);
+  transform:translateY(-6px);box-shadow:var(--shadow-card),0 0 28px -10px var(--emerald-glow);
+}
+.social-card:hover::before{opacity:1;}
+.social-card:hover svg{color:var(--emerald);transform:scale(1.2) rotate(-8deg);}
+
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+.contact{position:relative;overflow:hidden;}
+.contact::before{
+  content:"";position:absolute;bottom:-40%;left:-10%;width:500px;height:500px;
+  border-radius:50%;background:radial-gradient(circle,var(--emerald-glow) 0%,transparent 65%);
+  filter:blur(70px);opacity:.35;pointer-events:none;
+}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start;position:relative;z-index:2;}
+.contact-info h2{margin-bottom:1rem;}
+.contact-info > p{margin-bottom:2rem;font-size:1.02rem;}
+.contact-methods{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;}
+.contact-method{
+  display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-md);
+  transition:all .3s var(--spring);cursor:pointer;text-align:left;width:100%;
+}
+.contact-method:hover{border-color:var(--border-strong);background:var(--panel-2);transform:translateX(4px);}
+.contact-method-icon{
+  width:42px;height:42px;border-radius:var(--radius-sm);display:flex;
+  align-items:center;justify-content:center;flex-shrink:0;
+  background:var(--emerald-soft);border:1px solid var(--border-strong);
+}
+.contact-method-icon svg{width:18px;height:18px;color:var(--emerald);}
+.contact-method-text{display:flex;flex-direction:column;gap:.15rem;min-width:0;}
+.contact-method-label{font-family:var(--font-mono);font-size:.68rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:.15em;}
+.contact-method-value{font-size:.92rem;color:var(--text);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.contact-form{
+  display:flex;flex-direction:column;gap:1.25rem;
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:2rem;position:relative;overflow:hidden;
+}
+.contact-form::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--emerald),transparent);
+  background-size:200% 100%;animation:border-flow 4s linear infinite;
+}
+.form-row{display:flex;flex-direction:column;gap:.5rem;position:relative;}
+.form-row label{
+  font-family:var(--font-mono);font-size:.72rem;font-weight:500;
+  color:var(--text-muted);text-transform:uppercase;letter-spacing:.12em;
+}
+.form-row input,.form-row textarea{
+  padding:.85rem 1rem;background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--radius-sm);font-size:.95rem;color:var(--text);
+  transition:all .25s var(--ease);width:100%;
+}
+.form-row input:focus,.form-row textarea:focus{
+  outline:none;border-color:var(--emerald);background:var(--bg-alt);
+  box-shadow:0 0 0 4px var(--emerald-soft);
+}
+.form-row input::placeholder,.form-row textarea::placeholder{color:var(--text-faint);}
+.form-row textarea{resize:vertical;min-height:130px;font-family:var(--font-body);}
+.contact-form .btn-primary{align-self:flex-start;margin-top:.5rem;}
+.form-note{
+  font-family:var(--font-mono);font-size:.78rem;color:var(--emerald);
+  min-height:1.2em;letter-spacing:.02em;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer{border-top:1px solid var(--border);padding:3rem 0 1.5rem;margin-top:2rem;position:relative;}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid var(--border);}
+.footer-brand{display:flex;flex-direction:column;gap:.3rem;}
+.footer-name{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--text);letter-spacing:-.02em;}
+.footer-role{font-size:.85rem;color:var(--text-muted);font-family:var(--font-mono);}
+.footer-social{display:flex;gap:.5rem;}
+.footer-social a{
+  width:42px;height:42px;display:flex;align-items:center;justify-content:center;
+  border-radius:var(--radius-full);background:var(--panel);border:1px solid var(--border);
+  transition:all .3s var(--spring);
+}
+.footer-social a svg{width:17px;height:17px;color:var(--emerald-dim);transition:color .3s;}
+.footer-social a:hover{border-color:var(--border-strong);background:var(--panel-2);transform:translateY(-3px);box-shadow:0 6px 18px -6px var(--emerald-glow);}
+.footer-social a:hover svg{color:var(--emerald);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:1.5rem;flex-wrap:wrap;}
+.footer-copy{font-size:.8rem;color:var(--text-faint);font-family:var(--font-mono);}
+.footer-back{
+  display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--text-muted);
+  transition:color .3s;font-family:var(--font-mono);
+}
+.footer-back:hover{color:var(--emerald);}
+.footer-back svg{width:14px;height:14px;transition:transform .3s var(--spring);}
+.footer-back:hover svg{transform:translateY(-3px);}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+.back-top{
+  position:fixed;bottom:2rem;right:2rem;width:52px;height:52px;z-index:90;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--panel);border:1px solid var(--border-strong);border-radius:50%;
+  color:var(--emerald);cursor:pointer;opacity:0;pointer-events:none;
+  transform:translateY(20px) scale(.85);transition:all .4s var(--spring);
+  box-shadow:var(--shadow-card);
+}
+.back-top.show{opacity:1;pointer-events:auto;transform:translateY(0) scale(1);}
+.back-top:hover{background:var(--emerald-soft);transform:translateY(-3px) scale(1.06);box-shadow:0 10px 30px -8px var(--emerald-glow);}
+.back-top svg{width:20px;height:20px;}
+.back-top .ring{position:absolute;inset:-3px;transform:rotate(-90deg);pointer-events:none;}
+.back-top .ring circle{fill:none;stroke:var(--emerald);stroke-width:2;stroke-dasharray:163;stroke-dashoffset:163;transition:stroke-dashoffset .15s linear;}
+
+/* ==========================================================================
+   TOAST
+   ========================================================================== */
+.toast{
+  position:fixed;bottom:2rem;left:50%;transform:translate(-50%,150%);
+  padding:.85rem 1.4rem;background:var(--panel);border:1px solid var(--border-strong);
+  border-radius:var(--radius-full);font-family:var(--font-mono);font-size:.82rem;
+  color:var(--emerald);z-index:200;transition:transform .5s var(--spring);
+  box-shadow:var(--shadow-lift);display:flex;align-items:center;gap:.6rem;
+  pointer-events:none;
+}
+.toast.show{transform:translate(-50%,0);}
+.toast svg{width:16px;height:16px;}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:3rem;text-align:center;}
+  .hero-copy{align-items:center;}
+  .hero-kicker,.hero-badges{justify-content:center;}
+  .hero-actions{justify-content:center;}
+  .hero-visual{order:-1;min-height:460px;}
+  .about-grid{grid-template-columns:1fr;}
+  .about-card{position:static;}
+  .contact-grid{grid-template-columns:1fr;}
+  .stats-inner{grid-template-columns:repeat(2,1fr);gap:1.5rem;}
+  .stat:nth-child(3){border-left:none;}
+}
+@media (max-width:768px){
+  .nav-menu{
+    position:fixed;top:var(--nav-h);left:0;right:0;
+    background:color-mix(in srgb,var(--bg) 95%,transparent);
+    backdrop-filter:blur(24px) saturate(1.6);-webkit-backdrop-filter:blur(24px) saturate(1.6);
+    border-bottom:1px solid var(--border);padding:1.25rem;
+    display:flex;flex-direction:column;gap:.25rem;
+    transform:translateY(-12px);opacity:0;pointer-events:none;
+    transition:transform .35s var(--ease),opacity .35s var(--ease);
   }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ibrahim Kamil Ibrahim | Software Developer & Co-Founder at ONECO",
-    "url": "https://ibrahim-kamil-ibrahim.github.io/",
-    "author": {
-      "@type": "Person",
-      "name": "Ibrahim Kamil Ibrahim"
-    }
-  }
-  </script>
+  .nav-menu.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .nav-menu a{padding:.75rem 1rem;font-size:1rem;width:100%;border-radius:var(--radius-sm);}
+  .hamburger{display:flex;}
+  .float-chip{display:none;}
+  .code-window{right:50%;transform:translateX(50%);bottom:-8%;width:min(320px,92%);}
+  .projects-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+  .social-grid{grid-template-columns:repeat(2,1fr);}
+  .contact-form{padding:1.5rem;}
+  .back-top{bottom:1.25rem;right:1.25rem;width:46px;height:46px;}
+}
+@media (max-width:520px){
+  .section-inner{width:min(100% - 1.75rem,var(--container));}
+  .hero-name{font-size:clamp(2rem,11vw,2.8rem);}
+  .hero-actions{flex-direction:column;width:100%;}
+  .hero-actions .btn{width:100%;}
+  .stats-inner{grid-template-columns:1fr 1fr;padding:2rem 1rem;}
+  .stat{padding:0 .5rem;}
+  .footer-inner{flex-direction:column;text-align:center;align-items:center;}
+  .footer-bottom{justify-content:center;text-align:center;}
+}
+
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+  [data-animate]{opacity:1 !important;transform:none !important;}
+}
+</style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============================== NAVBAR ============================== -->
-  <header class="site-header" id="top">
-    <div class="nav-inner">
-      <a href="#top" class="nav-logo">Ibrahim Kamil Ibrahim</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-      <nav class="nav-menu" id="nav-menu" aria-label="Primary">
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header class="site-header" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">Ibrahim Kamil Ibrahim</a>
 
-      <div class="nav-actions">
-        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to light mode" aria-pressed="false">
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 14.5a8.5 8.5 0 1 1-9-11 7 7 0 0 0 9 11Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M4.5 12H2M22 12h-2.5M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-        <button id="nav-toggle" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 14.5a8.5 8.5 0 1 1-9-11 7 7 0 0 0 9 11Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M4.5 12H2M22 12h-2.5M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <button id="nav-toggle" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="main">
+<main id="main">
 
-    <!-- Floating decorative orbs -->
-    <div class="orb orb-1" aria-hidden="true"></div>
-    <div class="orb orb-2" aria-hidden="true"></div>
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-aurora" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
 
-    <!-- ============================== HERO ============================== -->
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <div class="hero-copy" data-animate="fade-up">
-          <p class="hero-kicker">Dire Dawa, Ethiopia</p>
-          <h1 class="hero-name">Ibrahim Kamil Ibrahim</h1>
-          <p class="hero-title">Software Developer &middot; Full&#8209;Stack Developer &middot; Mobile &amp; Desktop Developer</p>
-          <p class="hero-desc">I build web, mobile, and desktop applications that turn ideas into real digital solutions.</p>
+    <div class="hero-inner">
+      <div class="hero-copy" data-animate="fade-up">
+        <p class="hero-kicker">Dire Dawa, Ethiopia</p>
+        <h1 class="hero-name">Ibrahim Kamil Ibrahim</h1>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View My Projects</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-            <!-- REPLACE: href with the real path to your CV file, e.g. assets/Ibrahim-Kamil-Ibrahim-CV.pdf -->
-            <a href="assets/Ibrahim-Kamil-Ibrahim-CV.pdf" class="btn btn-ghost" download>Download CV</a>
-          </div>
-
-          <ul class="hero-badges">
-            <li>Full-Stack Development</li>
-            <li>Mobile Development</li>
-            <li>Desktop Development</li>
-            <li>Software Solutions</li>
-          </ul>
+        <div class="hero-role">
+          <span class="prompt">&gt;_</span>
+          <span class="typed" id="typed"></span>
+          <span class="caret" aria-hidden="true"></span>
         </div>
 
-        <div class="hero-visual" data-animate="fade-up" data-animate-delay="1">
-          <div class="portrait-frame">
-            <!-- REPLACE: src with a real professional photo, e.g. assets/profile.jpg -->
-            <img src="./me.jpg" alt="Portrait of Ibrahim Kamil Ibrahim, software developer" width="360" height="440" loading="eager" />
-          </div>
+        <p class="hero-desc">
+          I build web, mobile, and desktop applications that turn ideas into
+          real, working digital solutions.
+        </p>
 
-          <div class="code-window" aria-hidden="true">
-            <div class="code-window-bar">
-              <span></span><span></span><span></span>
-            </div>
-            <pre class="code-window-body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>View My Projects</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <ul class="hero-badges">
+          <li>Full-Stack</li>
+          <li>Mobile</li>
+          <li>Desktop</li>
+          <li>UI / UX</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-animate="fade-up" data-delay="1">
+        <div class="portrait-wrap" id="portraitWrap">
+          <div class="portrait-ring" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="me.jpg" alt="Portrait of Ibrahim Kamil Ibrahim" width="360" height="440" loading="eager"
+                 onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#15996e,#2fe3a6)';" />
+          </div>
+        </div>
+
+        <div class="float-chip chip-1">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 7v10l8 5 8-5V7l-8-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span>ONECO · Co-Founder</span>
+        </div>
+        <div class="float-chip chip-2">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span>Full-Stack Dev</span>
+        </div>
+        <div class="float-chip chip-3">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span>Clean Code</span>
+        </div>
+
+        <div class="code-window" aria-hidden="true">
+          <div class="code-window-bar">
+            <span></span><span></span><span></span>
+            <span class="code-window-title">developer.ts</span>
+          </div>
+          <pre class="code-window-body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
   <span class="tok-key">name</span>: <span class="tok-str">"Ibrahim Kamil Ibrahim"</span>,
   <span class="tok-key">base</span>: <span class="tok-str">"Dire Dawa, Ethiopia"</span>,
   <span class="tok-key">role</span>: <span class="tok-str">"Software Developer"</span>,
   <span class="tok-key">cofounder</span>: <span class="tok-str">"ONECO"</span>,
-  <span class="tok-key">builds</span>: [<span class="tok-str">"web"</span>, <span class="tok-str">"mobile"</span>, <span class="tok-str">"desktop"</span>]
+  <span class="tok-key">builds</span>: [<span class="tok-str">"web"</span>,<span class="tok-str">"mobile"</span>,<span class="tok-str">"desktop"</span>]
 };</code></pre>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ============================== ABOUT ============================== -->
-    <section class="section" id="about">
-      <div class="section-inner about-grid">
-        <div data-animate="fade-up">
-          <h2>About Ibrahim Kamil Ibrahim</h2>
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS STRIP
+  ============================================================ -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat" data-animate="fade-up">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Platforms Mastered</span>
+      </div>
+      <div class="stat" data-animate="fade-up" data-delay="1">
+        <span class="stat-num" data-count="10">0<span class="plus">+</span></span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat" data-animate="fade-up" data-delay="2">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Featured Projects</span>
+      </div>
+      <div class="stat" data-animate="fade-up" data-delay="3">
+        <span class="stat-num" data-count="100">0<span class="plus">%</span></span>
+        <span class="stat-label">Committed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-copy" data-animate="fade-up">
+          <span class="section-tag">01 · About</span>
+          <h2>Building software that solves real problems.</h2>
           <p>
-            Ibrahim Kamil Ibrahim is a software developer based in Dire Dawa, Ethiopia, working across
-            web, mobile, and desktop platforms to build practical, real-world applications. As Co-Founder
-            at <strong>ONECO</strong>, he focuses on turning ideas into digital products that solve
-            everyday problems for people and businesses.
+            Ibrahim Kamil Ibrahim is a software developer based in Dire Dawa,
+            Ethiopia, working across web, mobile, and desktop platforms to build
+            practical, real-world applications. As Co-Founder at
+            <strong>ONECO</strong>, he focuses on turning ideas into digital
+            products that solve everyday problems for people and businesses.
           </p>
           <p>
-            His work spans the full development lifecycle &mdash; from planning and interface design to
-            writing clean, maintainable code and shipping working software. He is continuously learning
-            modern tools and technologies, with a particular interest in full-stack development, mobile
-            applications, and building efficient software solutions from the ground up.
+            His work spans the full development lifecycle — from planning and
+            interface design to writing clean, maintainable code and shipping
+            working software. He is continuously learning modern tools and
+            technologies, with a particular interest in full-stack development,
+            mobile applications, and building efficient software solutions from
+            the ground up.
           </p>
           <p>
-            Ibrahim approaches every project with a problem-solving mindset: understanding what a person
-            or business actually needs, then building something that works reliably and can grow over time.
+            Ibrahim approaches every project with a problem-solving mindset:
+            understanding what a person or business actually needs, then building
+            something that works reliably and can grow over time.
           </p>
         </div>
-      </div>
-    </section>
 
-    <!-- ============================== SKILLS ============================== -->
-    <section class="section section-alt" id="skills">
-      <div class="section-inner">
+        <aside class="about-card" data-animate="fade-up" data-delay="1">
+          <div class="about-card-title">Quick Facts</div>
+          <ul class="about-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>Based in Dire Dawa, Ethiopia</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16v12H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>Co-Founder at ONECO</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><path d="m8 6-5 6 5 6M16 6l5 6-5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Web · Mobile · Desktop Development</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span>Always learning, always shipping</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE
+  ============================================================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">HTML</span><span class="marquee-item">CSS</span>
+      <span class="marquee-item">JavaScript</span><span class="marquee-item">Full-Stack Development</span>
+      <span class="marquee-item">Mobile Apps</span><span class="marquee-item">Desktop Apps</span>
+      <span class="marquee-item">UI / UX</span><span class="marquee-item">APIs</span>
+      <span class="marquee-item">Git &amp; GitHub</span><span class="marquee-item">Software Solutions</span>
+      <span class="marquee-item">HTML</span><span class="marquee-item">CSS</span>
+      <span class="marquee-item">JavaScript</span><span class="marquee-item">Full-Stack Development</span>
+      <span class="marquee-item">Mobile Apps</span><span class="marquee-item">Desktop Apps</span>
+      <span class="marquee-item">UI / UX</span><span class="marquee-item">APIs</span>
+      <span class="marquee-item">Git &amp; GitHub</span><span class="marquee-item">Software Solutions</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-head" data-animate="fade-up">
+        <span class="section-tag">02 · Capabilities</span>
         <h2>Skills &amp; Technologies</h2>
-        <p class="section-lead">Tools and disciplines Ibrahim works with day to day.</p>
-
-        <ul class="skills-grid">
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 3h16l-1.4 15.6L12 21l-6.6-2.4L4 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M7.3 7h9l-.3 3.4H8.4M8.4 10.4l.3 3 3.3 1 3.3-1 .3-3.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>HTML</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 3h16l-1.4 15.6L12 21l-6.6-2.4L4 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M15.9 7H8l.2 2.3h7.5l-.5 5.6-3.2 1-3.2-1-.2-2.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>CSS</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 9v6.2c0 1.2-.6 1.7-1.5 1.7s-1.3-.5-1.5-1M15.8 9v5c0 1.5-.7 2-1.9 2-1 0-1.5-.4-1.9-1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            <span>JavaScript</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h7l2 2h7v12H4V5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.5 13.5l2-2-2-2M13 15h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Full-Stack Development</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 18.3h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            <span>Mobile App Development</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.4" stroke="currentColor" stroke-width="1.4"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            <span>Desktop Development</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="13" rx="1.4" stroke="currentColor" stroke-width="1.4"/><path d="M7 20h10M9 17.5v2.5M15 17.5v2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="9" cy="10" r="1.4" stroke="currentColor" stroke-width="1.3"/><path d="M13 9h4M13 11.5h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-            <span>UI/UX</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="6" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/><path d="M12 8v3.5M12 11.5 6.9 15.4M12 11.5l5.1 3.9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            <span>Git &amp; GitHub</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6 4 12l5 6M15 6l5 6-5 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>APIs</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 8v4.3l3 1.9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Problem Solving</span>
-          </li>
-          <li class="skill-card" data-animate="fade-up">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4 7v6c0 4.4 3.4 7.6 8 8 4.6-.4 8-3.6 8-8V7l-8-4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12.2l2 2 4-4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Software Development</span>
-          </li>
-        </ul>
+        <p class="section-lead">The tools and disciplines Ibrahim works with day to day — from markup and styling to full application architecture.</p>
       </div>
-    </section>
 
-    <!-- ============================== PROJECTS ============================== -->
-    <section class="section" id="projects">
-      <div class="section-inner">
+      <ul class="skills-grid">
+        <li class="skill-card" data-animate="fade-up"><svg viewBox="0 0 24 24" fill="none"><path d="M4 3h16l-1.4 15.6L12 21l-6.6-2.4L4 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7.3 7h9l-.3 3.4H8.4M8.4 10.4l.3 3 3.3 1 3.3-1 .3-3.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>HTML</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="1"><svg viewBox="0 0 24 24" fill="none"><path d="M4 3h16l-1.4 15.6L12 21l-6.6-2.4L4 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15.9 7H8l.2 2.3h7.5l-.5 5.6-3.2 1-3.2-1-.2-2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>CSS</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="2"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 9v6.2c0 1.2-.6 1.7-1.5 1.7s-1.3-.5-1.5-1M15.8 9v5c0 1.5-.7 2-1.9 2-1 0-1.5-.4-1.9-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>JavaScript</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="3"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h7l2 2h7v12H4V5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 13.5l2-2-2-2M13 15h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Full-Stack Development</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="4"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="2.5" width="10" height="19" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 18.3h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Mobile App Development</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="5"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.4" stroke="currentColor" stroke-width="1.5"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Desktop Development</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="6"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4.5" width="18" height="13" rx="1.4" stroke="currentColor" stroke-width="1.5"/><path d="M7 20h10M9 17.5v2.5M15 17.5v2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="10" r="1.4" stroke="currentColor" stroke-width="1.4"/><path d="M13 9h4M13 11.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><span>UI / UX</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="7"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="17" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="17" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v3.5M12 11.5 6.9 15.4M12 11.5l5.1 3.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Git &amp; GitHub</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="8"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6 4 12l5 6M15 6l5 6-5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>APIs</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="9"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4.3l3 1.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Problem Solving</span></li>
+        <li class="skill-card" data-animate="fade-up" data-delay="10"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 4 7v6c0 4.4 3.4 7.6 8 8 4.6-.4 8-3.6 8-8V7l-8-4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12.2l2 2 4-4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Software Development</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-head" data-animate="fade-up">
+        <span class="section-tag">03 · Work</span>
         <h2>Projects</h2>
-        <p class="section-lead">A selection of what Ibrahim is building and has worked on.</p>
-
-        <div class="projects-grid">
-
-          <article class="project-card" data-animate="fade-up">
-            <div class="project-thumb" aria-hidden="true">
-              <!-- REPLACE: with a real project image at assets/projects/oneco.jpg -->
-              <img src="assets/projects/oneco-placeholder.jpg" alt="ONECO project preview" loading="lazy" width="480" height="300" />
-            </div>
-            <div class="project-body">
-              <h3>ONECO</h3>
-              <p>Technology and software solutions focused on turning ideas into practical digital products.</p>
-              <ul class="tech-tags">
-                <li>Software Solutions</li>
-                <li>Product Development</li>
-              </ul>
-              <!-- REPLACE: href with the real ONECO project/website URL -->
-              <a href="#" class="project-link">View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-animate="fade-up">
-            <div class="project-thumb" aria-hidden="true">
-              <!-- REPLACE: with a real project image at assets/projects/iki-stock.jpg -->
-              <img src="assets/projects/iki-stock-placeholder.jpg" alt="iKi Stock project preview" loading="lazy" width="480" height="300" />
-            </div>
-            <div class="project-body">
-              <h3>iKi Stock</h3>
-              <p>A digital stock and business solution concept designed to help businesses manage products and sales more efficiently.</p>
-              <ul class="tech-tags">
-                <li>Web App</li>
-                <li>Business Tools</li>
-              </ul>
-              <!-- REPLACE: href with the real iKi Stock project URL -->
-              <a href="#" class="project-link">View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-animate="fade-up">
-            <div class="project-thumb" aria-hidden="true">
-              <!-- REPLACE: with a real project image at assets/projects/elite-leaders-camp.jpg -->
-              <img src="assets/projects/elite-leaders-camp-placeholder.jpg" alt="Elite Leaders Camp project preview" loading="lazy" width="480" height="300" />
-            </div>
-            <div class="project-body">
-              <h3>Elite Leaders Camp</h3>
-              <p>A youth-focused educational and leadership initiative covering technology, creativity, practical skills, and leadership development.</p>
-              <ul class="tech-tags">
-                <li>Education</li>
-                <li>Leadership</li>
-              </ul>
-              <!-- REPLACE: href with the real Elite Leaders Camp URL -->
-              <a href="#" class="project-link">View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-animate="fade-up">
-            <div class="project-thumb" aria-hidden="true">
-              <!-- REPLACE: with a real project image at assets/projects/web-projects.jpg -->
-              <img src="assets/projects/web-projects-placeholder.jpg" alt="Web development projects preview" loading="lazy" width="480" height="300" />
-            </div>
-            <div class="project-body">
-              <h3>Web Development Projects</h3>
-              <p>Modern responsive websites and web applications built with clean and practical technologies.</p>
-              <ul class="tech-tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <!-- REPLACE: href with a real project/portfolio URL -->
-              <a href="#" class="project-link">View Project</a>
-            </div>
-          </article>
-
-        </div>
+        <p class="section-lead">A selection of what Ibrahim is building and has worked on — from product concepts to real shipped software.</p>
       </div>
-    </section>
 
-    <!-- ============================== ONECO ============================== -->
-    <section class="section section-alt oneco" id="oneco">
-      <div class="section-inner oneco-inner">
-        <div data-animate="fade-up">
-          <h2>Co-Founder at ONECO</h2>
-          <p>I work on building technology products and digital solutions that turn ideas into real-world applications.</p>
-          <!-- REPLACE: href with the real ONECO website URL -->
-          <a href="#" class="btn btn-outline">Learn More About ONECO</a>
-        </div>
+      <div class="projects-grid">
+        <article class="project-card tilt" data-animate="fade-up">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder" style="background:linear-gradient(135deg,#15996e,#2fe3a6);">ONECO</div>
+            <div class="project-thumb-overlay"><span class="tag">Product · 2025</span></div>
+          </div>
+          <div class="project-body">
+            <span class="project-num">01 / 04</span>
+            <h3>ONECO</h3>
+            <p>Technology and software solutions focused on turning ideas into practical digital products.</p>
+            <ul class="tech-tags"><li>Software Solutions</li><li>Product Development</li></ul>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-animate="fade-up" data-delay="1">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder" style="background:linear-gradient(135deg,#0a7a55,#2bb894);">iKi Stock</div>
+            <div class="project-thumb-overlay"><span class="tag">Web App</span></div>
+          </div>
+          <div class="project-body">
+            <span class="project-num">02 / 04</span>
+            <h3>iKi Stock</h3>
+            <p>A digital stock and business solution concept designed to help businesses manage products and sales more efficiently.</p>
+            <ul class="tech-tags"><li>Web App</li><li>Business Tools</li></ul>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-animate="fade-up" data-delay="2">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder" style="background:linear-gradient(135deg,#0d3d2e,#1a8a66);">Elite Leaders</div>
+            <div class="project-thumb-overlay"><span class="tag">Initiative</span></div>
+          </div>
+          <div class="project-body">
+            <span class="project-num">03 / 04</span>
+            <h3>Elite Leaders Camp</h3>
+            <p>A youth-focused educational and leadership initiative covering technology, creativity, practical skills, and leadership development.</p>
+            <ul class="tech-tags"><li>Education</li><li>Leadership</li></ul>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-animate="fade-up" data-delay="3">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder" style="background:linear-gradient(135deg,#1a3d33,#0f7d5a);">Web Dev</div>
+            <div class="project-thumb-overlay"><span class="tag">Portfolio</span></div>
+          </div>
+          <div class="project-body">
+            <span class="project-num">04 / 04</span>
+            <h3>Web Development Projects</h3>
+            <p>Modern responsive websites and web applications built with clean and practical technologies.</p>
+            <ul class="tech-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============================== EXPERIENCE ============================== -->
-    <section class="section" id="experience">
-      <div class="section-inner">
+  <!-- ============================================================
+       ONECO
+  ============================================================ -->
+  <section class="section oneco" id="oneco">
+    <div class="section-inner oneco-inner">
+      <div class="oneco-content" data-animate="fade-up">
+        <span class="oneco-badge">Now Building</span>
+        <h2>Co-Founder at ONECO</h2>
+        <p>I work on building technology products and digital solutions that turn ideas into real-world applications — from concept to shipped software.</p>
+        <a href="#" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Learn More About ONECO</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE
+  ============================================================ -->
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <div class="section-head" data-animate="fade-up">
+        <span class="section-tag">04 · Journey</span>
         <h2>Experience</h2>
-
-        <ol class="timeline">
-          <li class="timeline-item" data-animate="fade-up">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <h3>Co-Founder &mdash; ONECO</h3>
-              <p>Building technology products and digital solutions that turn ideas into real-world applications.</p>
-            </div>
-          </li>
-        </ol>
+        <p class="section-lead">Where Ibrahim has worked, built, and continues to grow as a developer.</p>
       </div>
-    </section>
 
-    <!-- ============================== SOCIAL PROFILES ============================== -->
-    <section class="section section-alt" id="social">
-      <div class="section-inner">
+      <ol class="timeline">
+        <li class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Present</div>
+            <h3>Co-Founder &mdash; ONECO</h3>
+            <p>Building technology products and digital solutions that turn ideas into real-world applications.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOCIAL
+  ============================================================ -->
+  <section class="section" id="social">
+    <div class="section-inner">
+      <div class="section-head" data-animate="fade-up">
+        <span class="section-tag">05 · Network</span>
         <h2>Connect</h2>
-        <p class="section-lead">Find Ibrahim Kamil Ibrahim across the web.</p>
-
-        <ul class="social-grid">
-          <li>
-            <a class="social-card" href="https://www.linkedin.com/in/ibrahimkamilibrahim/" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 10v6.5M7.5 7.6v.02M11.3 16.5V13c0-1.4.9-2.3 2-2.3 1.2 0 1.9.8 1.9 2.3v3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-              <span>LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-card" href="https://www.instagram.com/ibrahim_kamil_ibrahim_/" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-card" href="https://github.com/ibrahim-kamil-ibrahim" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.62-.2.62-.44v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.62.75.08-.58.32-.98.57-1.2-2-.23-4.1-1-4.1-4.44 0-.98.35-1.78.92-2.4-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.46.92a8.4 8.4 0 0 1 4.48 0c1.71-1.16 2.46-.92 2.46-.92.5 1.25.18 2.17.1 2.4.57.62.91 1.42.91 2.4 0 3.45-2.1 4.2-4.11 4.43.33.29.62.85.62 1.72v2.55c0 .25.17.53.63.44A9 9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-              <span>GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-card" href="https://web.facebook.com/ibrahimkamilibrahim1" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M13.8 9.2h-1.3c-.5 0-.8.4-.8 1v1.3h2l-.3 2h-1.7V19h-2v-5.5H8.2v-2h1.5V10c0-1.5.9-2.6 2.4-2.6h1.7v1.8Z" fill="currentColor"/></svg>
-              <span>Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-card" href="https://x.com/ibrahimkamil877" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h4.3l4.2 5.9 4.6-5.9h2l-5.9 7.6L20.5 19.5h-4.3l-4.6-6.4-5 6.4h-2l6.3-8.1L5 4.5Z" fill="currentColor"/></svg>
-              <span>X</span>
-            </a>
-          </li>
-        </ul>
+        <p class="section-lead">Find Ibrahim Kamil Ibrahim across the web — always open to ideas, collaborations, and good conversations.</p>
       </div>
-    </section>
 
-    <!-- ============================== CONTACT ============================== -->
-    <section class="section contact" id="contact">
-      <div class="section-inner">
-        <h2>Let&rsquo;s Build Something Together</h2>
-        <p class="section-lead">Have an idea, project, or opportunity? Let&rsquo;s connect.</p>
+      <ul class="social-grid">
+        <li><a class="social-card" href="https://www.linkedin.com/in/ibrahimkamilibrahim/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10v6.5M7.5 7.6v.02M11.3 16.5V13c0-1.4.9-2.3 2-2.3 1.2 0 1.9.8 1.9 2.3v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>LinkedIn</span></a></li>
+        <li><a class="social-card" href="https://www.instagram.com/ibrahim_kamil_ibrahim_/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg><span>Instagram</span></a></li>
+        <li><a class="social-card" href="https://github.com/ibrahim-kamil-ibrahim" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.62-.2.62-.44v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.62.75.08-.58.32-.98.57-1.2-2-.23-4.1-1-4.1-4.44 0-.98.35-1.78.92-2.4-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.46.92a8.4 8.4 0 0 1 4.48 0c1.71-1.16 2.46-.92 2.46-.92.5 1.25.18 2.17.1 2.4.57.62.91 1.42.91 2.4 0 3.45-2.1 4.2-4.11 4.43.33.29.62.85.62 1.72v2.55c0 .25.17.53.63.44A9 9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg><span>GitHub</span></a></li>
+        <li><a class="social-card" href="https://web.facebook.com/ibrahimkamilibrahim1" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M13.8 9.2h-1.3c-.5 0-.8.4-.8 1v1.3h2l-.3 2h-1.7V19h-2v-5.5H8.2v-2h1.5V10c0-1.5.9-2.6 2.4-2.6h1.7v1.8Z" fill="currentColor"/></svg><span>Facebook</span></a></li>
+        <li><a class="social-card" href="https://x.com/ibrahimkamil877" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h4.3l4.2 5.9 4.6-5.9h2l-5.9 7.6L20.5 19.5h-4.3l-4.6-6.4-5 6.4h-2l6.3-8.1L5 4.5Z" fill="currentColor"/></svg><span>X</span></a></li>
+      </ul>
+    </div>
+  </section>
 
-        <!--
-          This is a static site with no backend.
-          The form currently opens the visitor's email client via a mailto: link
-          (handled in script.js). To collect submissions directly, connect a
-          form service such as Formspree, Getform, or Web3Forms:
-            1. Create an account with the service and get an endpoint URL.
-            2. Set the form's action="YOUR_ENDPOINT_URL" and method="POST".
-            3. Remove or keep the mailto fallback in script.js as a backup.
-        -->
-        <form class="contact-form" id="contact-form" novalidate>
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="section section-alt contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-up">
+          <span class="section-tag">06 · Contact</span>
+          <h2>Let&rsquo;s Build Something Together</h2>
+          <p>Have an idea, project, or opportunity? Send a message and let&rsquo;s turn it into something real.</p>
+
+          <div class="contact-methods">
+            <button type="button" class="contact-method" id="copyEmail" data-email="ibrahim.kamil@example.com">
+              <span class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="contact-method-text">
+                <span class="contact-method-label">Email</span>
+                <span class="contact-method-value">ibrahim.kamil@example.com</span>
+              </span>
+            </button>
+
+            <a class="contact-method" href="https://www.linkedin.com/in/ibrahimkamilibrahim/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10v6.5M7.5 7.6v.02M11.3 16.5V13c0-1.4.9-2.3 2-2.3 1.2 0 1.9.8 1.9 2.3v3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span class="contact-method-text">
+                <span class="contact-method-label">LinkedIn</span>
+                <span class="contact-method-value">ibrahimkamilibrahim</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate data-animate="fade-up" data-delay="1">
           <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required />
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required />
           </div>
           <div class="form-row">
-            <label for="email">Email</label>
-            <!-- REPLACE: destination email is set in script.js (CONTACT_EMAIL) -->
-            <input type="email" id="email" name="email" autocomplete="email" required />
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com" required />
           </div>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span>Send Message</span>
+          </button>
           <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
         </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+</main>
 
-  <!-- ============================== FOOTER ============================== -->
-  <footer class="site-footer">
-    <div class="section-inner footer-inner">
-      <div>
-        <p class="footer-name">Ibrahim Kamil Ibrahim</p>
-        <p class="footer-role">Software Developer | Co-Founder at ONECO</p>
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="section-inner">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Ibrahim Kamil Ibrahim</span>
+        <span class="footer-role">Software Developer · Co-Founder at ONECO</span>
       </div>
 
       <ul class="footer-social" aria-label="Social profiles">
-        <li><a href="https://www.linkedin.com/in/ibrahimkamilibrahim/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 10v6.5M7.5 7.6v.02M11.3 16.5V13c0-1.4.9-2.3 2-2.3 1.2 0 1.9.8 1.9 2.3v3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </a></li>
-        <li><a href="https://www.instagram.com/ibrahim_kamil_ibrahim_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-        </a></li>
-        <li><a href="https://github.com/ibrahim-kamil-ibrahim" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.62-.2.62-.44v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.62.75.08-.58.32-.98.57-1.2-2-.23-4.1-1-4.1-4.44 0-.98.35-1.78.92-2.4-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.46.92a8.4 8.4 0 0 1 4.48 0c1.71-1.16 2.46-.92 2.46-.92.5 1.25.18 2.17.1 2.4.57.62.91 1.42.91 2.4 0 3.45-2.1 4.2-4.11 4.43.33.29.62.85.62 1.72v2.55c0 .25.17.53.63.44A9 9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        </a></li>
-        <li><a href="https://web.facebook.com/ibrahimkamilibrahim1" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M13.8 9.2h-1.3c-.5 0-.8.4-.8 1v1.3h2l-.3 2h-1.7V19h-2v-5.5H8.2v-2h1.5V10c0-1.5.9-2.6 2.4-2.6h1.7v1.8Z" fill="currentColor"/></svg>
-        </a></li>
-        <li><a href="https://x.com/ibrahimkamil877" target="_blank" rel="noopener noreferrer" aria-label="X">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h4.3l4.2 5.9 4.6-5.9h2l-5.9 7.6L20.5 19.5h-4.3l-4.6-6.4-5 6.4h-2l6.3-8.1L5 4.5Z" fill="currentColor"/></svg>
-        </a></li>
+        <li><a href="https://www.linkedin.com/in/ibrahimkamilibrahim/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10v6.5M7.5 7.6v.02M11.3 16.5V13c0-1.4.9-2.3 2-2.3 1.2 0 1.9.8 1.9 2.3v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></li>
+        <li><a href="https://www.instagram.com/ibrahim_kamil_ibrahim_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com/ibrahim-kamil-ibrahim" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.62-.2.62-.44v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.62.75.08-.58.32-.98.57-1.2-2-.23-4.1-1-4.1-4.44 0-.98.35-1.78.92-2.4-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.46.92a8.4 8.4 0 0 1 4.48 0c1.71-1.16 2.46-.92 2.46-.92.5 1.25.18 2.17.1 2.4.57.62.91 1.42.91 2.4 0 3.45-2.1 4.2-4.11 4.43.33.29.62.85.62 1.72v2.55c0 .25.17.53.63.44A9 9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://web.facebook.com/ibrahimkamilibrahim1" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="M13.8 9.2h-1.3c-.5 0-.8.4-.8 1v1.3h2l-.3 2h-1.7V19h-2v-5.5H8.2v-2h1.5V10c0-1.5.9-2.6 2.4-2.6h1.7v1.8Z" fill="currentColor"/></svg></a></li>
+        <li><a href="https://x.com/ibrahimkamil877" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h4.3l4.2 5.9 4.6-5.9h2l-5.9 7.6L20.5 19.5h-4.3l-4.6-6.4-5 6.4h-2l6.3-8.1L5 4.5Z" fill="currentColor"/></svg></a></li>
       </ul>
     </div>
-    <p class="footer-copy">&copy; 2026 Ibrahim Kamil Ibrahim. All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Ibrahim Kamil Ibrahim. All rights reserved.</p>
+      <a href="#top" class="footer-back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to top
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg class="ring" viewBox="0 0 52 52"><circle cx="26" cy="26" r="26"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Copied to clipboard</span>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var root = document.documentElement;
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Enable animation styles only when JS is ready  root.classList.add("js-ready");
+
+  /* ============================================================
+     THEME TOGGLE
+  ============================================================ */
+  var themeToggle = document.getElementById("theme-toggle");
+  var STORAGE_KEY = "ikib-theme";
+  function applyTheme(theme){
+    root.setAttribute("data-theme", theme);
+    if (themeToggle){
+      var isLight = theme === "light";
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
+    }
+  }
+  function getSavedTheme(){ try { return localStorage.getItem(STORAGE_KEY); } catch(_) { return null; } }
+  function saveTheme(t){ try { localStorage.setItem(STORAGE_KEY, t); } catch(_) {} }
+  (function initTheme(){
+    var saved = getSavedTheme();
+    if (saved === "light" || saved === "dark") applyTheme(saved);
+    else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) applyTheme("light");
+    else applyTheme("dark");
+  })();
+  if (themeToggle){
+    themeToggle.addEventListener("click", function(){
+      var current = root.getAttribute("data-theme") || "dark";
+      var next = current === "dark" ? "light" : "dark";
+      applyTheme(next); saveTheme(next);
+    });
+  }
+
+  /* ============================================================
+     TYPING ANIMATION
+  ============================================================ */
+  var typedEl = document.getElementById("typed");
+  if (typedEl && !reduceMotion){
+    var phrases = [
+      "Software Developer",
+      "Full-Stack Developer",
+      "Mobile App Developer",
+      "Desktop Developer",
+      "Co-Founder at ONECO"
+    ];
+    var pi = 0, ci = 0, deleting = false;
+    function type(){
+      var current = phrases[pi];
+      if (!deleting){
+        ci++;
+        typedEl.textContent = current.slice(0, ci);
+        if (ci === current.length){ deleting = true; return setTimeout(type, 1800); }
+      } else {
+        ci--;
+        typedEl.textContent = current.slice(0, ci);
+        if (ci === 0){ deleting = false; pi = (pi + 1) % phrases.length; return setTimeout(type, 350); }
+      }
+      setTimeout(type, deleting ? 40 : 80);
+    }
+    setTimeout(type, 700);
+  } else if (typedEl){
+    typedEl.textContent = "Software Developer";
+  }
+
+  /* ============================================================
+     MOBILE NAV
+  ============================================================ */
+  var navToggle = document.getElementById("nav-toggle");
+  var navMenu = document.getElementById("nav-menu");
+  if (navToggle && navMenu){
+    navToggle.addEventListener("click", function(){
+      var isOpen = navMenu.classList.toggle("open");
+      navToggle.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    navMenu.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape" && navMenu.classList.contains("open")){
+        navMenu.classList.remove("open");
+        navToggle.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.focus();
+      }
+    });
+    document.addEventListener("click", function(e){
+      if (navMenu.classList.contains("open")){
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)){
+          navMenu.classList.remove("open");
+          navToggle.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      }
+    });
+  }
+
+  /* ============================================================
+     SCROLL EFFECTS
+  ============================================================ */
+  var siteHeader = document.querySelector(".site-header");
+  var navProgress = document.createElement("div");
+  navProgress.className = "nav-progress";
+  document.body.appendChild(navProgress);
+
+  var backTop = document.getElementById("backTop");
+  var ringCircle = backTop ? backTop.querySelector("circle") : null;
+  var ringLen = 2 * Math.PI * 26;
+
+  var navLinks = siteHeader ? Array.prototype.slice.call(siteHeader.querySelectorAll(".nav-menu a[href^='#']")) : [];
+  var sections = navLinks.map(function(link){
+    var id = link.getAttribute("href").slice(1);
+    var el = document.getElementById(id);
+    return el ? { id: id, el: el, link: link } : null;
+  }).filter(Boolean);
+
+  var ticking = false;
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function(){
+      var scrollY = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = docHeight > 0 ? (scrollY / docHeight) : 0;
+
+      navProgress.style.width = Math.min(progress * 100, 100) + "%";
+
+      if (siteHeader) siteHeader.classList.toggle("scrolled", scrollY > 40);
+
+      if (backTop){
+        if (scrollY > 500) backTop.classList.add("show");
+        else backTop.classList.remove("show");
+        if (ringCircle){
+          ringCircle.style.strokeDasharray = ringLen;
+          ringCircle.style.strokeDashoffset = ringLen * (1 - progress);
+        }
+      }
+
+      if (sections.length){
+        var currentId = null;
+        for (var i = 0; i < sections.length; i++){
+          var s = sections[i];
+          var top = s.el.getBoundingClientRect().top + scrollY - 140;
+          if (scrollY >= top - 200) currentId = s.id;
+        }
+        if (!currentId && scrollY < 300 && sections.length) currentId = sections[0].id;
+        navLinks.forEach(function(link){
+          link.classList.toggle("active", link.getAttribute("href") === "#" + currentId);
+        });
+      }
+      ticking = false;
+    });
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  onScroll();
+
+  if (backTop){
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  }
+
+  /* ============================================================
+     SCROLL-TRIGGERED REVEALS
+  ============================================================ */
+  if ("IntersectionObserver" in window && !reduceMotion){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          var delay = entry.target.getAttribute("data-delay");
+          if (delay) entry.target.style.transitionDelay = (parseInt(delay,10) * 0.08) + "s";
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -50px 0px" });
+    document.querySelectorAll("[data-animate]").forEach(function(el){ observer.observe(el); });
+  } else {
+    document.querySelectorAll("[data-animate]").forEach(function(el){ el.classList.add("visible"); });
+  }
+
+  /* ============================================================
+     STAT COUNTERS
+  ============================================================ */
+  var counters = document.querySelectorAll("[data-count]");
+  if (counters.length && "IntersectionObserver" in window && !reduceMotion){
+    var counterObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseInt(el.getAttribute("data-count"), 10);
+        var duration = 1600;
+        var start = performance.now();
+        var suffix = el.querySelector(".plus") ? el.querySelector(".plus").outerHTML : "";
+        function step(now){
+          var t = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - t, 3);
+          var val = Math.round(eased * target);
+          el.innerHTML = val + suffix;
+          if (t < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        counterObs.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function(el){ counterObs.observe(el); });
+  }
+
+  /* ============================================================
+     CURSOR GLOW + MAGNETIC BUTTONS + CARD TILT
+  ============================================================ */
+  var cursorGlow = document.getElementById("cursorGlow");
+  var isTouch = matchMedia("(hover: none)").matches;
+  if (cursorGlow && !isTouch && !reduceMotion){
+    var mx = window.innerWidth / 2, my = window.innerHeight / 2;
+    var cx = mx, cy = my;
+    document.addEventListener("mousemove", function(e){
+      mx = e.clientX; my = e.clientY;
+    });
+    (function loop(){
+      cx += (mx - cx) * 0.12;
+      cy += (my - cy) * 0.12;
+      cursorGlow.style.transform = "translate(" + cx + "px," + cy + "px) translate(-50%,-50%)";
+      requestAnimationFrame(loop);
+    })();
+  } else if (cursorGlow){
+    cursorGlow.style.display = "none";
+  }
+
+  // Magnetic buttons
+  if (!isTouch && !reduceMotion){
+    document.querySelectorAll(".btn").forEach(function(btn){
+      btn.addEventListener("mousemove", function(e){
+        var rect = btn.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = "translate(" + (x * 0.15) + "px," + (y * 0.25) + "px) translateY(-2px)";
+      });
+      btn.addEventListener("mouseleave", function(){
+        btn.style.transform = "";
+      });
+    });
+
+    // 3D tilt on cards
+    document.querySelectorAll(".tilt").forEach(function(card){
+      card.addEventListener("mousemove", function(e){
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var rx = ((y - rect.height / 2) / rect.height) * -6;
+        var ry = ((x - rect.width / 2) / rect.width) * 6;
+        card.style.transform = "perspective(1000px) rotateX(" + rx + "deg) rotateY(" + ry + "deg) translateY(-8px)";
+      });
+      card.addEventListener("mouseleave", function(){
+        card.style.transform = "";
+      });
+    });
+
+    // 3D tilt on portrait
+    var portraitWrap = document.getElementById("portraitWrap");
+    if (portraitWrap){
+      var frame = portraitWrap.querySelector(".portrait-frame");
+      portraitWrap.addEventListener("mousemove", function(e){
+        var rect = portraitWrap.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var rx = ((y - rect.height / 2) / rect.height) * -10;
+        var ry = ((x - rect.width / 2) / rect.width) * 10;
+        frame.style.transform = "perspective(1000px) rotateX(" + rx + "deg) rotateY(" + ry + "deg)";
+      });
+      portraitWrap.addEventListener("mouseleave", function(){
+        frame.style.transform = "";
+      });
+    }
+  }
+
+  /* ============================================================
+     COPY EMAIL
+  ============================================================ */
+  var copyBtn = document.getElementById("copyEmail");
+  var toast = document.getElementById("toast");
+  function showToast(msg){
+    if (!toast) return;
+    toast.querySelector("span").textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ toast.classList.remove("show"); }, 2200);
+  }
+  if (copyBtn){
+    copyBtn.addEventListener("click", function(){
+      var email = copyBtn.getAttribute("data-email");
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(function(){ showToast("Email copied — " + email); })
+          .catch(function(){ showToast(email); });
+      } else {
+        showToast(email);
+      }
+    });
+  }
+
+  /* ============================================================
+     CONTACT FORM (mailto fallback)
+  ============================================================ */
+  var CONTACT_EMAIL = "ibrahim.kamil@example.com";
+  var contactForm = document.getElementById("contact-form");
+  var formNote = document.getElementById("form-note");
+  if (contactForm && formNote){
+    contactForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = (document.getElementById("name").value || "").trim();
+      var email = (document.getElementById("email").value || "").trim();
+      var message = (document.getElementById("message").value || "").trim();
+      if (!name || !email || !message){ formNote.textContent = "Please fill in all fields."; return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ formNote.textContent = "Please enter a valid email address."; return; }
+      var subject = "Portfolio contact from " + name;
+      var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
+      window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      formNote.textContent = "Opening your email client...";
+      contactForm.reset();
+    });
+  }
+
+})();
+</script>
 </body>
 </html>
-
